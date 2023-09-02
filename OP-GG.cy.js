@@ -1,8 +1,8 @@
 describe('OP-GG', () => {
     it("Checking Elosanta's stats", () => {
       cy.visit('https://www.op.gg')
-      cy.get('[title="Naafiri"]').should('be.visible')
-      cy.get('.css-bc9ut9.e5qh6tw2').click()
+      cy.get('[title="Nami The Little Mermaid Period"]').should('be.visible')
+      cy.get('.css-a9yqak.e49ipbx2').click()
       cy.contains('Europe West').click()
       cy.get('#searchHome').type('twitchtvELOSANTA', {delay: 200})
       cy.get('[alt="twitchtvELOSANTA"]').should('be.visible').click()
